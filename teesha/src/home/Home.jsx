@@ -19,7 +19,7 @@ export default function Home() {
     <div class="container col-xxl-12 px-sm-4 py-5">
     <div class="row flex-lg-row flex-column-reverse align-items-center g-5 py-5 justify-content-center">
       <div class="d-flex align-items-center justify-content-center col-10 col-sm-12 col-lg-4 mt-1 mt-lg-5 mt-md-5">
-        <img src="../../public/teesha.jpg" class=" my-5 rounded-3" alt="Bootstrap Themes" width="250" height="400" loading="lazy"/>
+        <img src="/teesha.jpg" class=" my-5 rounded-3" alt="Bootstrap Themes" width="250" height="400" loading="lazy"/>
       </div>
       <div class="col-lg-8">
         <h3 class="display-5 fw-bold text-body-emphasis lh-1 mt-3 mb-3">Hi There ! <span className="wave" role="img" aria-labelledby="wave">
