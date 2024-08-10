@@ -1,13 +1,22 @@
 import React from 'react'
-import "./Home.css"
 import NavBar from '../navbar/Navbar';
+import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import {TypeAnimation} from "react-type-animation"
+import pdf from "../resume/TeeshaKakkarResume (8).pdf";
+import { AiOutlineDownload } from "react-icons/ai";
 export default function Home() {
+    const navigate = useNavigate();
+    const handleclick = ()=>{
+        navigate("/about");
+    }
+
+
   return (
 
     <div>
     <NavBar/>
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-12 px-sm-4 py-5">
     <div class="row flex-lg-row flex-column-reverse align-items-center g-5 py-5 justify-content-center">
       <div class="d-flex align-items-center justify-content-center col-10 col-sm-12 col-lg-4 mt-1 mt-lg-5 mt-md-5">
         <img src="../../public/teesha.jpg" class=" my-5 rounded-3" alt="Bootstrap Themes" width="250" height="400" loading="lazy"/>
@@ -33,14 +42,22 @@ export default function Home() {
                   ]}
                   wrapper="span"
                   speed={20}
-                  style={{ fontSize: '3rem', display: 'inline-block' }}
+                  style={{ fontSize: '4rem', display: 'inline-block', fontWeight:"bold"}}
                   repeat={Infinity}
                 />
         
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit.</p>
+        <p class="lead">Hello! I'm Teesha Kakkar, a passionate full-stack web developer and AI/ML enthusiast currently pursuing my BTech in Computer Science from Jaypee Institute of Information Technology, Noida. My journey in tech began with a curiosity for how things work under the hood, leading me to explore the realms of web development and artificial intelligence.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Read More</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Download Resume</button>
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onClick={handleclick}>Read More</button>
+          <Button
+            variant="primary"
+            href={pdf}
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
         </div>
       </div>
     </div>
