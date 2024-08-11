@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+import { TouchBackend } from 'react-dnd-touch-backend';
+import { isMobile } from 'react-device-detect';
 import PuzzlePiece from './PuzzlePiece';
 import PuzzleBoard from './PuzzleBoard';
 
@@ -24,7 +26,7 @@ function Puzzle() {
     };
 
     return (
-        <DndProvider backend={HTML5Backend}>
+        <DndProvider backend={isMobile ? TouchBackend : HTML5Backend}>
             <div className="container mt-5 col-lg-6">
                 <div className="row">
                     <div className="col-12">
