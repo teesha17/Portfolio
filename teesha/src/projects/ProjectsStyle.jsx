@@ -52,7 +52,7 @@ export const Desc = styled.div`
 
 export const ToggleButtonGroup = styled.div`
     display: flex;
-    border: 1.5px solid ${({ theme }) => theme.primary};
+    border: 1.5px solid #854CE6;
     color: ${({ theme }) => theme.primary};
     font-size: 16px;
     border-radius: 12px;

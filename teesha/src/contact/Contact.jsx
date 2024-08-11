@@ -142,9 +142,9 @@ const Contact = () => {
 
 
   return (
-    <Container className='my-5'>
+    <Container className='mt-5'>
       <Wrapper>
-        <Title className='my-5'>Contact</Title>
+        <Title className='mt-5'>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>

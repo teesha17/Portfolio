@@ -20,9 +20,16 @@ const PuzzleBoard = ({ piece }) => {
                     <div>
                         <h5>My Projects</h5>
                         <ul>
-                            <li>Project 1: AI-Based Web App</li>
-                            <li>Project 2: E-Commerce Platform</li>
-                            <li>Project 3: Machine Learning Model</li>
+                            <li>Handicart</li>
+                            <li>HomeHarbour</li>
+                            <li>JSCOP-6.0</li>
+                            <li>Job-Fit</li>
+                            <li>Review Analyzert</li>
+                            <li>Emotion Predictor</li>
+                            <li>Cat or Dog</li>
+                            <li>Shopping List Predictor</li>
+                            <li>Langchain QnA Bot</li>
+                            <li>Blog Generator</li>
                         </ul>
                     </div>
                 );
@@ -31,9 +38,8 @@ const PuzzleBoard = ({ piece }) => {
                     <div>
                         <h5>My Experience</h5>
                         <ul>
-                            <li>Internship at XYZ Company</li>
-                            <li>Freelance Web Developer</li>
-                            <li>Teaching Assistant at JIIT</li>
+                            <li>Technical Volunteer at JIIT OPTICA</li>
+                            <li>Volunteer at GAME DEV HUB</li>
                         </ul>
                     </div>
                 );
@@ -53,8 +59,8 @@ const PuzzleBoard = ({ piece }) => {
                     <div>
                         <h5>My Skills</h5>
                         <ul>
-                            <li>JavaScript, React, Node.js</li>
-                            <li>Python, Machine Learning</li>
+                            <li>JavaScript, Reactjs, Node.js, ExpressJs, MongoDB</li>
+                            <li>Python, Machine Learning, Generative AI</li>
                             <li>HTML, CSS, Bootstrap</li>
                         </ul>
                     </div>

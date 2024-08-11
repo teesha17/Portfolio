@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle'
-import ProjectCard from './ProjectCards'
+import ProjectCard from './ProjectCard'
 import { projects } from '../about/data'
 
 
@@ -26,9 +26,9 @@ const Projects = ({openModal,setOpenModal}) => {
           }
           <Divider />
           {toggle === 'android app' ?
-            <ToggleButton active value="android app" onClick={() => setToggle('android app')}>GENERATIVE AI</ToggleButton>
+            <ToggleButton active value="android app" onClick={() => setToggle('generative ai')}>GENERATIVE AI</ToggleButton>
             :
-            <ToggleButton value="android app" onClick={() => setToggle('android app')}>GENERATIVE AI</ToggleButton>
+            <ToggleButton value="android app" onClick={() => setToggle('generative ai')}>GENERATIVE AI</ToggleButton>
           }
           <Divider />
           {toggle === 'machine learning' ?

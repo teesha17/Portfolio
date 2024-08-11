@@ -1,4 +1,3 @@
-// src/components/PuzzlePiece.js
 import React from 'react';
 import { useDrag } from 'react-dnd';
 
@@ -23,12 +22,13 @@ const PuzzlePiece = ({ id, piece, onDrop }) => {
             className={`puzzle-piece ${isDragging ? 'dragging' : ''}`}
             style={{
                 backgroundColor: piece.color,
-                width:'100px',
+                width: '100px',
+                height: '50px',
+                margin: '5px',
                 opacity: isDragging ? 0.5 : 1,
-                cursor: 'move',
+                cursor: isDragging ? 'grabbing' : 'grab',
                 color: 'black',
-                height:"50px",
-                margin:"5px"
+                touchAction: 'none', // Prevents default touch behavior
             }}
         >
             {piece.text}
