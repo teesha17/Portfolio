@@ -15,7 +15,7 @@ function About() {
                 <div class="row flex-lg-row-reverse flex-column align-items-center justify-content-between">
                     <Puzzle />
                     <Skills />
-                    <Experience/>
+                    <Experience />
                 </div>
             </div>
         </div>

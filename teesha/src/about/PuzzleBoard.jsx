@@ -65,7 +65,7 @@ const PuzzleBoard = ({ piece }) => {
                         </ul>
                     </div>
                 );
-                case 'Hobbies':
+            case 'Hobbies':
                 return (
                     <div>
                         <h5>My Hobbies</h5>
@@ -88,7 +88,7 @@ const PuzzleBoard = ({ piece }) => {
             style={{
                 backgroundColor: isOver ? 'black' : 'black',
                 border: '1px solid #854CE6',
-                borderRadius:'20px',
+                borderRadius: '20px',
                 minHeight: '200px',
                 textAlign: 'center',
                 padding: '20px',

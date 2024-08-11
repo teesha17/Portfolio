@@ -168,15 +168,14 @@ const ProjectCards = ({ project, setOpenModal }) => {
         <Card onClick={() => setOpenModal({ state: true, project: project })}>
             <Image src={project.image} />
             <Overlay>
-                <Addtocart><a href={project.github} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", color:"white", fontWeight:"bold"}}><FaGithub /> Github</a></Addtocart>
-                <Addtocart><a href={project.webapp} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", color:"white", fontWeight:"bold"}}><CgWebsite /> Webapp</a></Addtocart>
+                <Addtocart><a href={project.github} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}><FaGithub /> Github</a></Addtocart>
+                <Addtocart><a href={project.webapp} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}><CgWebsite /> Webapp</a></Addtocart>
             </Overlay>
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
             </Details>
-            {/* <Button>View Project</Button> */}
         </Card>
     )
 }

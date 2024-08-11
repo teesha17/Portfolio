@@ -282,7 +282,7 @@ button:focus {
 
 .heading {
     font-size: 2.4em !important;
-    
+
 }
 
 .heading-name {
@@ -628,7 +628,7 @@ button:focus {
     padding-bottom: 30px !important;
     background-image: var(--section-background-color) !important;
     color: white !important;
-    height:"100vh"
+    height: "100vh"
 }
 
 .resume {
@@ -766,4 +766,3 @@ button:focus {
 .fork-btn-inner::after {
     display: none !important;
 }
-
