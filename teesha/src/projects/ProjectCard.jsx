@@ -1,6 +1,37 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaGithub } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
 
+const Overlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;  /* Match the height of the Image */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+`
+
+const Addtocart = styled.button`
+    background-color:rgba(0, 0, 0, 0);
+    border: 1px solid #854CE6;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    margin: 2% 0;
+    padding: 10px;
+    width: 50%;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+`
 
 const Button = styled.button`
     display: none;
@@ -15,6 +46,7 @@ const Button = styled.button`
     cursor: pointer;
     transition: all 0.8s ease-in-out;
 `
+
 const Card = styled.div`
     width: 400px;
     height: 400px;
@@ -27,13 +59,21 @@ const Card = styled.div`
     flex-direction: column;
     gap: 14px;
     transition: all 0.5s ease-in-out;
+    position: relative;
+
     &:hover {
         transform: translateY(-10px);
         box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
         filter: brightness(1.1);
     }
-    &:hover ${Button} {
-        display: block;
+
+    &:hover ${Overlay} {
+        opacity: 1;
+    }
+
+    &:hover ${Addtocart} {
+        opacity: 1;
+        transform: translateY(0);
     }
 `
 
@@ -112,6 +152,7 @@ const Members = styled.div`
     align-items: center;
     padding-left: 10px;
 `
+
 const Avatar = styled.img`
     width: 38px;
     height: 38px;
@@ -122,10 +163,14 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({project,setOpenModal}) => {
+const ProjectCards = ({ project, setOpenModal }) => {
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
+        <Card onClick={() => setOpenModal({ state: true, project: project })}>
+            <Image src={project.image} />
+            <Overlay>
+                <Addtocart><a href={project.github} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", color:"white", fontWeight:"bold"}}><FaGithub /> Github</a></Addtocart>
+                <Addtocart><a href={project.webapp} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", color:"white", fontWeight:"bold"}}><CgWebsite /> Webapp</a></Addtocart>
+            </Overlay>
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
@@ -136,4 +181,4 @@ const ProjectCards = ({project,setOpenModal}) => {
     )
 }
 
-export default ProjectCards
+export default ProjectCards;

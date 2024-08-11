@@ -261,7 +261,7 @@
           "/iamge8.png",
         category: "web app",
         github: "https://github.com/teesha17/handicart",
-        webapp: "https://breaking-bad-webapp.netlify.app",
+        webapp: "https://handicart.vercel.app/",
       },
       {
         id: 7,
