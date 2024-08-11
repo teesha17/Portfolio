@@ -49,14 +49,14 @@ export default function Home() {
         <p class="lead">Hello! I'm Teesha Kakkar, a passionate full-stack web developer and AI/ML enthusiast currently pursuing my BTech in Computer Science from Jaypee Institute of Information Technology, Noida. My journey in tech began with a curiosity for how things work under the hood, leading me to explore the realms of web development and artificial intelligence.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onClick={handleclick}>Read More</button>
-          <button
+          <Button
             type="button"
-            class="btn btn-primary btn-lg px-4 me-md-2"
+            class="btn btn-primary btn-lg px-4 py-2 me-md-2"
             href={pdf}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
-          </button>
+          </Button>
         </div>
       </div>
     </div>
