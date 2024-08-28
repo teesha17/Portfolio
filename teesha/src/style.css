@@ -137,7 +137,7 @@ button:focus {
 
 @media (max-width: 767px) {
     .navbar {
-        padding: 1rem 2rem !important;
+        
         font-size: 1.4rem !important;
         background-color: #181a27 !important;
     }
@@ -328,6 +328,52 @@ button:focus {
         padding-bottom: 2em !important;
     }
 }
+@media (max-width: 768px) {
+    .img-fluid {
+        width: 150px; /* Adjust width for smaller screens */
+        height: 150px; /* Ensuring it's a circle */
+        margin-right: 15px; /* Adds space between image and text */
+
+    }
+
+    .heading-container {
+        display: flex;
+        align-items: center;
+    }
+    .image-container{
+        opacity: 0;
+    }
+    .cont{
+        height:0;
+    }
+}
+
+.gradient-border {
+    border: 8px solid;
+    border-image: linear-gradient(45deg, #7f00ff, #e100ff) 1;
+    /* Adjust border thickness with 'border' property */
+    padding: 5px; /* Optional: Adds spacing inside the border */
+    border-radius: 50%; /* Keeps the border circular */
+}
+
+.image-container {
+    width: 320px; /* Adjust width as needed */
+    height: 320px; /* Make height equal to width for a circle */
+    background: linear-gradient(135deg, #7f00ff, #e100ff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.profile-image {
+    width: 280px; /* Slightly smaller than the container to show the border */
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 
 .home-about-section {
     position: relative;

@@ -12,7 +12,7 @@ const PuzzleBoard = ({ piece }) => {
     }));
 
     const renderContent = () => {
-        if (!piece) return 'Drop here';
+        if (!piece) return 'Drag here';
 
         switch (piece.text) {
             case 'Projects':
