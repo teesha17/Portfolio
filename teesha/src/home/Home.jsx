@@ -31,9 +31,9 @@ export default function Home() {
                         <h3 className="display-5 fw-bold text-body-emphasis lh-1 mt-3 mb-3">
                             Hi There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
                         </h3>
-                        <h1 className="heading-name">
+                        <h2 className="heading-name" style={{marginBottom:"10px"}}>
                             I'M <strong className="main-name">TEESHA KAKKAR</strong>
-                        </h1>
+                        </h2>
                         <TypeAnimation
                             sequence={[
                                 'WEB DEVELOPER',
@@ -45,11 +45,11 @@ export default function Home() {
                             ]}
                             wrapper="span"
                             speed={20}
-                            style={{ fontSize: '3rem', display: 'inline-block', fontWeight: 'bold' }}
+                            className='typewriter'
                             repeat={Infinity}
                         />
                         <br />
-                        <ul style={{ lineHeight: '2', listStyleType: 'none' }}>
+                        <ul className="list">
                             <li> 🌟 Passionate coder with a love for turning ideas into reality.</li>
                             <li> 💻 Full-stack developer with a knack for problem-solving.</li>
                             <li> 🔧 Always refining my skills and expanding my tech toolkit.</li>

@@ -286,7 +286,7 @@ button:focus {
 }
 
 .heading-name {
-    font-size: 2.5em !important;
+    font-size: 2.5em ;
 }
 
 .main-name {
@@ -328,6 +328,24 @@ button:focus {
         padding-bottom: 2em !important;
     }
 }
+.profile-image {
+    width: 350px; /* Slightly smaller than the container to show the border */
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.image-container {
+    width: 370px; /* Adjust width as needed */
+    height: 370px; /* Make height equal to width for a circle */
+    background: linear-gradient(135deg, #7f00ff, #e100ff);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
 @media (max-width: 768px) {
     .img-fluid {
         width: 150px; /* Adjust width for smaller screens */
@@ -342,8 +360,12 @@ button:focus {
     }
     .image-container{
         opacity: 0;
+        height: 0;
     }
     .cont{
+        height:0;
+    }
+    .profile-image{
         height:0;
     }
 }
@@ -356,22 +378,30 @@ button:focus {
     border-radius: 50%; /* Keeps the border circular */
 }
 
-.image-container {
-    width: 320px; /* Adjust width as needed */
-    height: 320px; /* Make height equal to width for a circle */
-    background: linear-gradient(135deg, #7f00ff, #e100ff);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-}
 
-.profile-image {
-    width: 280px; /* Slightly smaller than the container to show the border */
-    height: 280px;
-    border-radius: 50%;
-    object-fit: cover;
+.list{
+    line-height:3;
+    list-style-type: none;
+    margin:40px 0 40px 0;
+}
+.typewriter{
+    font-size:3rem;
+    display: inline-block;
+    font-weight: bold;
+}
+@media (max-width:786px)
+{
+    .list{
+        line-height:2;
+        list-style-type: none;
+        margin:10px 0 10px 0;
+    }
+    .heading-name{
+        font-size: 2rem;
+    }
+    .typewriter{
+        font-size: 2rem;
+    }
 }
 
 
