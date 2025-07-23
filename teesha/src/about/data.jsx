@@ -185,26 +185,24 @@ export const experiences = [
             "ExpressJs"
         ],
     },
-    // {
-    //   id: 1,
-    //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-    //   role: "Fullstack Externship",
-    //   company: "Flipr",
-    //   date: "June 2023 - July 2023",
-    //   desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
-    //   skills: [
-    //     "ReactJS",
-    //     "Redux",
-    //     "NodeJs",
-    //     "Material UI",
-    //     "HTML",
-    //     "CSS",
-    //     "JavaScript",
-    //     "Docker",
-    //     "AWS",
-    //     "MongoDB",
-    //   ],
-    // },
+    {
+      id: 1,
+      img: "./ophiz.jpeg",
+      role: "Fullstack Developer Intern",
+      company: "Kartavya Technologies",
+      date: "March 2025 - July 2025",
+      desc: "Developed a SuperAdmin web panel using React js, Node js and MongoDb to centralize the management of business clients and streamline internal operations. Implemented features to monitor user activity and performance metrics for each client, enabling proactive issue resolution and improved client satisfaction.",
+      skills: [
+        "ReactJS",
+        "Redux",
+        "NodeJs",
+        "Material UI",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "MongoDB",
+      ],
+    },
     // {
     //   id: 2,
     //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
@@ -251,6 +249,18 @@ export const experiences = [
 ];
 
 export const projects = [
+    {
+        id: 11,
+        title: "Campus Society",
+        date: "Jun 2024",
+        description:
+            "A MERN stack-based platform designed to streamline campus coordination between students, SPOCs, and coordinators. It features role-based dashboards, automated email notifications, and robust APIs for managing hubs and activities efficiently. This project ensures smooth interaction and seamless campus management.",
+        image:
+            "./campusSocietyphoto.jpeg",
+        category: "web app",
+        github: "https://github.com/teesha17/campusSocietyFrontend",
+        webapp: "https://campussociety.vercel.app/",
+    },
     {
         id: 6,
         title: "Handicart",

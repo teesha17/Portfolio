@@ -3,7 +3,7 @@ import NavBar from '../navbar/Navbar';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
-import pdf from '../resume/TeeshaKakkarResume (8).pdf';
+import pdf from '../resume/Teesha_Kakkar (4) (1).pdf';
 import { AiOutlineDownload } from 'react-icons/ai';
 
 export default function Home() {

@@ -30,6 +30,9 @@ const PuzzleBoard = ({ piece }) => {
                             <li>Shopping List Predictor</li>
                             <li>Langchain QnA Bot</li>
                             <li>Blog Generator</li>
+                            <li>Campus Society</li>
+                            <li>Microcon Syatems Ecommerce</li>
+                            <li>VerbalEx</li>
                         </ul>
                     </div>
                 );
@@ -40,6 +43,7 @@ const PuzzleBoard = ({ piece }) => {
                         <ul>
                             <li>Technical Volunteer at JIIT OPTICA</li>
                             <li>Volunteer at GAME DEV HUB</li>
+                            <li>FullStack Developer at KARTAVYA TECHNOLOGIES</li>
                         </ul>
                     </div>
                 );
