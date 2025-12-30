@@ -274,6 +274,30 @@ export const projects = [
         webapp: "https://handicart.vercel.app/",
     },
     {
+        id: 6,
+        title: "Microcon Systems",
+        date: "Jun 2025",
+        description:
+            "Engineered and deployed a scalable MERN stack e-commerce platform on AWS (EC2, S3), featuring product catalogs, user authentication, and a streamlined shopping cart.",
+        image:
+            "/microcon.png",
+        category: "web app",
+        github: "https://github.com/teesha17/Microcon-Systems-Frontend",
+        webapp: "https://www.microconindia.com/",
+    },
+    {
+        id: 6,
+        title: "Wendigo",
+        date: "Dec 2025",
+        description:
+            "A frontend project for an IT consulting firm, built using React.js and Tailwind CSS, focusing on responsive design and user experience.",
+        image:
+            "/wendigo.png",
+        category: "web app",
+        github: "https://github.com/teesha17/Wendigo",
+        webapp: "https://wendigo-five.vercel.app/",
+    },
+    {
         id: 7,
         title: "HomeHarbour",
         date: "Apr 2024",
@@ -392,6 +416,30 @@ export const projects = [
         category: "generative ai",
         github: "https://github.com/teesha17/Blog-Generator",
         webapp: "https://github.com/teesha17/Blog-Generator",
+    },
+    {
+        id: 5,
+        title: "Resonate",
+        date: "Nov 2025",
+        description:
+            "An app that converts text written in random words to meaningful sentences using Generative AI for people with speech impairments",
+        image:
+            "/resonate.png",
+        category: "generative ai",
+        github: "https://github.com/teesha17/Resonate",
+        webapp: "https://resonate-lemon.vercel.app/",
+    },
+    {
+        id: 5,
+        title: "NotesApp",
+        date: "Dec 2025",
+        description:
+            "An android app built using React Native that helps users to create, manage and organize their notes efficiently with a user-friendly interface and seamless synchronization across devices.",
+        image:
+            "/notesapp.jpeg",
+        category: "android app",
+        github: "https://github.com/teesha17/NotesApp-Frontend",
+        webapp: "https://expo.dev/accounts/teesha17/projects/myApp/builds/0a662c9d-37d0-4fc9-bf50-0986d8e33f9c",
     },
 
 ];

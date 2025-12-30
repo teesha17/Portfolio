@@ -25,10 +25,16 @@ const Projects = ({ openModal, setOpenModal }) => {
                             <ToggleButton value="web app" onClick={() => setToggle('web app')}>WEB APPS</ToggleButton>
                         }
                         <Divider />
-                        {toggle === 'android app' ?
-                            <ToggleButton active value="android app" onClick={() => setToggle('generative ai')}>GENERATIVE AI</ToggleButton>
+                        {toggle === 'generative ai' ?
+                            <ToggleButton active value="generative ai" onClick={() => setToggle('generative ai')}>GENERATIVE AI</ToggleButton>
                             :
-                            <ToggleButton value="android app" onClick={() => setToggle('generative ai')}>GENERATIVE AI</ToggleButton>
+                            <ToggleButton value="generative ai" onClick={() => setToggle('generative ai')}>GENERATIVE AI</ToggleButton>
+                        }
+                        <Divider />
+                        {toggle === 'android app' ?
+                            <ToggleButton active value="android app" onClick={() => setToggle('android app')}>ANDROID APPS</ToggleButton>
+                            :
+                            <ToggleButton value="android app" onClick={() => setToggle('android app')}>ANDROID APPS</ToggleButton>
                         }
                         <Divider />
                         {toggle === 'machine learning' ?

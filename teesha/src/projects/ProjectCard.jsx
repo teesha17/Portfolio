@@ -169,7 +169,7 @@ const ProjectCards = ({ project, setOpenModal }) => {
             <Image src={project.image} />
             <Overlay>
                 <Addtocart><a href={project.github} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}><FaGithub /> Github</a></Addtocart>
-                <Addtocart><a href={project.webapp} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}><CgWebsite /> Webapp</a></Addtocart>
+                <Addtocart><a href={project.webapp} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}><CgWebsite /> Project Link</a></Addtocart>
             </Overlay>
             <Details>
                 <Title>{project.title}</Title>
